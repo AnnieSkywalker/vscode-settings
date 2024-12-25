@@ -1,0 +1,165 @@
+{
+    //основные настройки редактора
+    "window.openFilesInNewWindow": "off",
+    "editor.tabSize": 4,
+    "editor.folding": false,
+    "editor.smoothScrolling": true,
+    "editor.hminimap.enabled": false,
+    // "editor.detectIndention": "first",
+    "editor.suggestSelection": "first",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.tree.indent": 24,
+
+    //Настройка переноса слов
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 120,
+
+    //связанные редактирования тегов
+    "editor.linkedEditing": true,
+
+    //автоматическое закрытие тегов
+    "html.autoClosingTags": true,
+    "javascript.autoClosingTags": true,
+    "typescript.autoClosingTags": true,
+    //отображение символов
+    "editor.renderControlCharacters": false,
+
+    //подсветка неоднозначных символов
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+
+    // быстрые подсказки
+    "editor.quickSuggestionsDelay": 0,
+    "html.completion.attributeDefaultValue": "singlequotes",
+
+    //внешний вид
+    "editor.bracketPairColorization.enabled": false,
+    "editor.glyphMargin": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.productIconTheme": "el-vsc-v1-icons",
+    "window.density.editorTabHeight": "compact",
+    "editor.accessibilitySupport": "off",
+    // "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "quill-icons",
+    "workbench.colorTheme": "Darcula",
+    "workbench.activityBar.location": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+
+    //настройка курсора
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+
+    //настройка шрифта
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+
+    "editor.fontSize": 14,
+    "editor.lineHeight": 22,
+    "editor.fontWeight": "400",
+
+    //кастомная подсветка синтаксиса
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "entity.name.type.class",
+                    "keyword",
+                    "constant",
+                    "storage.modifier",
+                    "storage.type.class.js"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+
+    // "terminal.integrated.fontFamily": "Liga",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.cursorStyle": "line",
+
+    // настройки обозревателя
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.startupEditor": "newUntitledFile",
+
+    //настройка отладки
+    "debug.toolBarLocation": "hidden",
+    "debug.showInlineBreakpointCandidates": false,
+    "debug.showBreakpointsInOverviewRuler": false,
+    "debug.focusWindowOnBreak": false,
+
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+
+    // "prettier.semi": false,
+    // "prettier.useTabs": true,
+    "editor.formatOnSave": true,
+    // "prettier.singleQuote": true,
+    // "prettier.jsxSingleQuote": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    // "prettier.arrowParens": "avoid",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.inlineSuggest.enabled": true,
+
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
+
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.stickyScroll.scrollWithEditor": false,
+    "workbench.tree.enableStickyScroll": false,
+    "editor.stickyScroll.enabled": false,
+    "window.commandCenter": false,
+    "files.autoSave": "onFocusChange",
+    "editor.hover.enabled": false,
+
+    "cSpell.language": "en,ru",
+    "files.trimTrailingWhitespaceInRegexAndStrings": false,
+    "editor.experimentalWhitespaceRendering": "off",
+    "editor.renderWhitespace": "all",
+    "svg.preview.transparencyGrid": true,
+    "svg.preview.boundingBox": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "vue.server.hybridMode": "typeScriptPluginOnly",
+    "vscodeGoogleTranslate.preferredLanguage": "English",
+    "editor.minimap.enabled": false
+}
