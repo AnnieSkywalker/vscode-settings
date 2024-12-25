@@ -180,20 +180,18 @@
     "editor.stickyScroll.enabled": false,
     "window.commandCenter": false,
     
-
+    //настройки пробелов
     "cSpell.language": "en,ru",
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "editor.experimentalWhitespaceRendering": "off",
     "editor.renderWhitespace": "all",
+    "workbench.colorCustomizations": {
+        "editorWhitespace.foreground": "#333333"
+    },
+
     "svg.preview.transparencyGrid": true,
     "svg.preview.boundingBox": true,
     "javascript.updateImportsOnFileMove.enabled": "never",
     "vue.server.hybridMode": "typeScriptPluginOnly",
     "vscodeGoogleTranslate.preferredLanguage": "English",
-    "vscode_custom_css.imports": [
-        "file:///home/andrey/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
-    ],
-
-
-
 }
