@@ -16,7 +16,6 @@
     // "editor.detectIndention": "first",
     "editor.suggestSelection": "first",
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.tree.indent": 24,
 
     //Настройка переноса слов
     "editor.wordWrap": "bounded",
@@ -91,11 +90,7 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.editor.empty.hint": "hidden",
     "workbench.sideBar.location": "right",
-
-    //fdsfsa
     "window.openFilesInNewWindow": "off",
-
-
 
     //кастомная подсветка синтаксиса
     "editor.tokenColorCustomizations": {
@@ -139,6 +134,7 @@
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.tabSizing": "shrink",
+    "workbench.tree.indent": 30,
     "workbench.startupEditor": "newUntitledFile",
     "git.decorations.enabled": false,
 
@@ -154,18 +150,24 @@
     },
     "emmet.triggerExpansionOnTab": true,
 
-    // "prettier.semi": false,
-    // "prettier.useTabs": true,
-    "editor.formatOnSave": true,
+    //настройки prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    //наверное более правильно прописать все эти настройки в файле конфигурации проекта .prettierrc.json
+
+    // "prettier.semi": true,
     // "prettier.singleQuote": true,
-    // "prettier.jsxSingleQuote": true,
+    // "prettier.bracketSpacing": true,
+    // "prettier.trailingComma": "all",
+    // "prettier.tabWidth": 4,
+    // "prettier.arrowParens": "avoid",
+    // "prettier.endOfLine": "lf",
+    "editor.formatOnSave": true,
+
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
-    // "prettier.arrowParens": "avoid",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.inlineSuggest.enabled": true,
 
+    "editor.inlineSuggest.enabled": true,
 
     //пустая строка в конце файла, после сохранения
     "files.insertFinalNewline": true,
@@ -173,15 +175,16 @@
     //автосохранение после потери фокуса
     "files.autoSave": "onFocusChange",
 
-
     "editor.gotoLocation.multipleDefinitions": "goto",
     "editor.stickyScroll.scrollWithEditor": false,
     "workbench.tree.enableStickyScroll": false,
     "editor.stickyScroll.enabled": false,
     "window.commandCenter": false,
-    
-    //настройки пробелов
+
+    //настройки расширения орфографии в коде
     "cSpell.language": "en,ru",
+
+    //настройки пробелов
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "editor.experimentalWhitespaceRendering": "off",
     "editor.renderWhitespace": "all",
@@ -191,7 +194,11 @@
 
     "svg.preview.transparencyGrid": true,
     "svg.preview.boundingBox": true,
+
     "javascript.updateImportsOnFileMove.enabled": "never",
     "vue.server.hybridMode": "typeScriptPluginOnly",
+
+    //Расширений, встроенный переводчик
     "vscodeGoogleTranslate.preferredLanguage": "English",
+    "prettier.requireConfig": true
 }
