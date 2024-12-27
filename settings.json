@@ -23,20 +23,21 @@
     "editor.wordWrapColumn": 120,
 
     //хлебные крошки
-    "breadcrumbs.icons": false,
-    "breadcrumbs.showKeys": false,
-    "breadcrumbs.showFiles": false,
-    "breadcrumbs.symbolPath": "off",
-    "breadcrumbs.showArrays": false,
-    "breadcrumbs.showEvents": false,
-    "breadcrumbs.showFields": false,
-    "breadcrumbs.showClasses": false,
-    "breadcrumbs.showMethods": false,
-    "breadcrumbs.showBooleans": false,
-    "breadcrumbs.showFunctions": false,
-    "breadcrumbs.showConstants": false,
-    "breadcrumbs.showEnumMembers": false,
-    "breadcrumbs.showConstructors": false,
+    "breadcrumbs.enabled": false,
+    // "breadcrumbs.icons": false,
+    // "breadcrumbs.showKeys": false,
+    // "breadcrumbs.showFiles": false,
+    // "breadcrumbs.symbolPath": "off",
+    // "breadcrumbs.showArrays": false,
+    // "breadcrumbs.showEvents": false,
+    // "breadcrumbs.showFields": false,
+    // "breadcrumbs.showClasses": false,
+    // "breadcrumbs.showMethods": false,
+    // "breadcrumbs.showBooleans": false,
+    // "breadcrumbs.showFunctions": false,
+    // "breadcrumbs.showConstants": false,
+    // "breadcrumbs.showEnumMembers": false,
+    // "breadcrumbs.showConstructors": false,
 
     //связанные редактирования тегов
     "editor.linkedEditing": true,
@@ -86,7 +87,6 @@
     "workbench.iconTheme": "quill-icons",
     "workbench.colorTheme": "Darcula",
     "workbench.activityBar.location": "hidden",
-    "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.editor.empty.hint": "hidden",
     "workbench.sideBar.location": "right",
@@ -148,7 +148,6 @@
     "editor.stickyScroll.scrollWithEditor": false,
     "workbench.tree.enableStickyScroll": false,
     "editor.stickyScroll.enabled": false,
-    "window.commandCenter": false,
 
     //настройки расширения орфографии в коде
     "cSpell.language": "en,ru",
@@ -159,21 +158,34 @@
     "editor.renderWhitespace": "all",
 
     //кастомные цвета областей
+    "window.titleBarStyle": "native",
     "workbench.colorCustomizations": {
-
-        "editorWhitespace.foreground": "#404040",
+        "editor.background": "#242424",
         "list.inactiveSelectionBackground": "#333333",
+
         "sideBar.background": "#1a1a1a",
         "sideBar.border": "#1f1f1f",
+
         "scrollbarSlider.activeBackground": "#262626",
         "scrollbarSlider.hoverBackground": "#333333",
-        "editor.background": "#1f1f1f",
-        "editorGutter.background": "#1f1f1f"
+
+        "statusBar.background": "#2c2c2c",
+
+        "tab.inactiveBackground": "#2c2c2c",
+        "editorGroupHeader.tabsBackground": "#2c2c2c",
+        "tab.activeBackground": "#262626",
+        "tab.activeBorder": "#262626",
+        "tab.unfocusedActiveBorder": "#000000",
+
+        // "breadcrumb.background": "#2c2c2c",
+
+        "editorLineNumber.foreground": "#404040",
+        "editorWhitespace.foreground": "#404040",
+        "editorGutter.background": "#242424",
     },
 
     //кастомная подсветка синтаксиса
     "editor.tokenColorCustomizations": {
-        "comments": "#404040",
         "textMateRules": [
             {
                 "scope": [
@@ -213,5 +225,8 @@
 
     //Расширений, встроенный переводчик
     "vscodeGoogleTranslate.preferredLanguage": "English",
-    "prettier.requireConfig": true
+    "prettier.requireConfig": true,
+    "window.commandCenter": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false
 }
