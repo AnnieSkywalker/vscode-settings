@@ -154,7 +154,6 @@
     //настройки prettier
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     //наверное более правильно прописать все эти настройки в файле конфигурации проекта .prettierrc.json
-
     // "prettier.semi": true,
     // "prettier.singleQuote": true,
     // "prettier.bracketSpacing": true,
@@ -189,8 +188,15 @@
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "editor.experimentalWhitespaceRendering": "off",
     "editor.renderWhitespace": "all",
+
+    //кастомные цвета областей
     "workbench.colorCustomizations": {
-        "editorWhitespace.foreground": "#333333"
+        "editorWhitespace.foreground": "#404040",
+        "list.inactiveSelectionBackground": "#333333",
+        "sideBar.background": "#1f1f1f",
+        "sideBar.border": "#1f1f1f",
+        "scrollbarSlider.activeBackground": "#262626",
+        "scrollbarSlider.hoverBackground": "#333333",
     },
 
     "svg.preview.transparencyGrid": true,
