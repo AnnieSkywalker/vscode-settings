@@ -21,9 +21,6 @@
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.wordWrapColumn": 120,
-
-    //хлебные крошки
-    "breadcrumbs.enabled": false,
     // "breadcrumbs.icons": false,
     // "breadcrumbs.showKeys": false,
     // "breadcrumbs.showFiles": false,
@@ -46,6 +43,7 @@
     "html.autoClosingTags": true,
     "javascript.autoClosingTags": true,
     "typescript.autoClosingTags": true,
+
     //отображение символов
     "editor.renderControlCharacters": false,
 
@@ -53,8 +51,8 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
 
     // быстрые подсказки
-    "editor.quickSuggestionsDelay": 0,
-    "html.completion.attributeDefaultValue": "singlequotes",
+    // "editor.quickSuggestionsDelay": 0,
+    // "html.completion.attributeDefaultValue": "singlequotes",
 
     //миникарта и обозначение отступов вертикальными полосками
     "editor.minimap.enabled": false,
@@ -71,7 +69,7 @@
     // скролл бар горизонтальный и вертикальный , плюс всякие декоративные полоски
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
-    // "editor.hideCursorInOverviewRuler": false,
+    "editor.hideCursorInOverviewRuler": false,
     "editor.overviewRulerBorder": false,
 
     //настройка курсора
@@ -86,10 +84,9 @@
 
     "workbench.iconTheme": "quill-icons",
     "workbench.colorTheme": "Darcula",
-    "workbench.activityBar.location": "hidden",
+    // "workbench.activityBar.location": "hidden",
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.editor.empty.hint": "hidden",
-    "workbench.sideBar.location": "right",
     "window.openFilesInNewWindow": "off",
 
     
@@ -100,7 +97,6 @@
 
     // настройки обозревателя (проводника)
     "explorer.confirmDelete": false,
-    "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.tabSizing": "shrink",
     "workbench.tree.indent": 24,
@@ -121,7 +117,19 @@
     "emmet.triggerExpansionOnTab": true,
 
     //настройки prettier
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
     //наверное более правильно прописать все эти настройки в файле конфигурации проекта .prettierrc.json
     // "prettier.semi": true,
     // "prettier.singleQuote": true,
@@ -132,6 +140,7 @@
     // "prettier.endOfLine": "lf",
     "editor.formatOnSave": true,
 
+    // сортирует импорты в алфавитном порядке
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
@@ -228,5 +237,34 @@
     "prettier.requireConfig": true,
     "window.commandCenter": false,
     "workbench.navigationControl.enabled": false,
-    "workbench.layoutControl.enabled": false
+    "workbench.layoutControl.enabled": false,
+    "breadcrumbs.enabled": false,
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.enabled": true,
+
+    "eslint.format.enable": true,
+
+
+
+    //подсказки
+    // Управляет отображением быстрых подсказок во время ввода текста.
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+     // Управляет тем, следует ли принимать предложения для символов фиксации. Например, в JavaScript точка с запятой (`;`) может быть символом фиксации, который принимает предложение и печатает этот символ.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+
+
+    // Управляет задержкой в ​​мс, после которой будут отображаться быстрые предложения.
+    "editor.quickSuggestionsDelay": 10,
+
+    // Управляет тем, будет ли нажатие клавиши Tab вставлять лучшее предложение или будет ли Tab циклически перебирать другие предложения
+    "editor.tabCompletion": "off",
+
+    // Включить подсказки параметров
+    "editor.parameterHints.enabled": true,
+
 }
