@@ -12,29 +12,31 @@
 
     "editor.folding": false,
     "editor.smoothScrolling": true,
-    "editor.hminimap.enabled": false,
-    // "editor.detectIndention": "first",
-    "editor.suggestSelection": "first",
     "editor.multiCursorModifier": "ctrlCmd",
+    // "editor.detectIndention": "first",
+    // "editor.suggestSelection": "first",
+    // "editor.inlineSuggest.enabled": true,
 
     //Настройка переноса слов
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.wordWrapColumn": 120,
-    // "breadcrumbs.icons": false,
-    // "breadcrumbs.showKeys": false,
-    // "breadcrumbs.showFiles": false,
-    // "breadcrumbs.symbolPath": "off",
-    // "breadcrumbs.showArrays": false,
-    // "breadcrumbs.showEvents": false,
-    // "breadcrumbs.showFields": false,
-    // "breadcrumbs.showClasses": false,
-    // "breadcrumbs.showMethods": false,
-    // "breadcrumbs.showBooleans": false,
-    // "breadcrumbs.showFunctions": false,
-    // "breadcrumbs.showConstants": false,
-    // "breadcrumbs.showEnumMembers": false,
-    // "breadcrumbs.showConstructors": false,
+
+    //хлебные крошки
+    "breadcrumbs.icons": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.symbolPath": "off",
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showConstructors": false,
 
     //связанные редактирования тегов
     "editor.linkedEditing": true,
@@ -46,7 +48,6 @@
 
     //отображение символов
     "editor.renderControlCharacters": false,
-
     //подсветка неоднозначных символов
     "editor.unicodeHighlight.ambiguousCharacters": false,
 
@@ -54,13 +55,14 @@
     // "editor.quickSuggestionsDelay": 0,
     // "html.completion.attributeDefaultValue": "singlequotes",
 
+    //подсказка, лампочка
+    "editor.lightbulb.enabled": "off",
+    // "editor.hover.enabled": false,
+
+
     //миникарта и обозначение отступов вертикальными полосками
     "editor.minimap.enabled": false,
     "editor.guides.indentation": false,
-
-    //подсказка, лампочка
-    "editor.lightbulb.enabled": "off",
-    "editor.hover.enabled": false,
 
     //внешний вид
     "editor.bracketPairColorization.enabled": false,
@@ -117,35 +119,24 @@
     "emmet.triggerExpansionOnTab": true,
 
     //настройки prettier
+    "prettier.requireConfig": true,
+    "editor.formatOnSave": true,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-
     "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    
     // "editor.defaultFormatter": "esbenp.prettier-vscode",
-    //наверное более правильно прописать все эти настройки в файле конфигурации проекта .prettierrc.json
-    // "prettier.semi": true,
-    // "prettier.singleQuote": true,
-    // "prettier.bracketSpacing": true,
-    // "prettier.trailingComma": "all",
-    // "prettier.tabWidth": 4,
-    // "prettier.arrowParens": "avoid",
-    // "prettier.endOfLine": "lf",
-    "editor.formatOnSave": true,
 
     // сортирует импорты в алфавитном порядке
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
 
-    "editor.inlineSuggest.enabled": true,
 
     //пустая строка в конце файла, после сохранения
     "files.insertFinalNewline": true,
@@ -165,6 +156,42 @@
     "files.trimTrailingWhitespaceInRegexAndStrings": false,
     "editor.experimentalWhitespaceRendering": "off",
     "editor.renderWhitespace": "all",
+
+
+
+
+    // "javascript.updateImportsOnFileMove.enabled": "never",
+    // "vue.server.hybridMode": "typeScriptPluginOnly",
+
+    
+    
+    "window.commandCenter": false,
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "breadcrumbs.enabled": false,
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.enabled": true,
+
+    "eslint.format.enable": true,
+
+
+
+    //подсказки
+    // Управляет отображением быстрых подсказок во время ввода текста.
+    // "editor.quickSuggestions": {
+    //     "other": true,
+    //     "comments": false,
+    //     "strings": false
+    // },
+
+    // Включить подсказки параметров
+    "editor.parameterHints.enabled": true,
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "auto",
+
+    // работа с svg
+    "svg.preview.transparencyGrid": true,
+    "svg.preview.boundingBox": true,
 
     //кастомные цвета областей
     "window.titleBarStyle": "native",
@@ -192,8 +219,8 @@
         "editorWhitespace.foreground": "#404040",
         "editorGutter.background": "#242424",
     },
-
     //кастомная подсветка синтаксиса
+
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -225,46 +252,6 @@
         ]
     },
 
-
-    "svg.preview.transparencyGrid": true,
-    "svg.preview.boundingBox": true,
-
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "vue.server.hybridMode": "typeScriptPluginOnly",
-
     //Расширений, встроенный переводчик
     "vscodeGoogleTranslate.preferredLanguage": "English",
-    "prettier.requireConfig": true,
-    "window.commandCenter": false,
-    "workbench.navigationControl.enabled": false,
-    "workbench.layoutControl.enabled": false,
-    "breadcrumbs.enabled": false,
-    "explorer.compactFolders": false,
-    "explorer.fileNesting.enabled": true,
-
-    "eslint.format.enable": true,
-
-
-
-    //подсказки
-    // Управляет отображением быстрых подсказок во время ввода текста.
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": false
-    },
-
-     // Управляет тем, следует ли принимать предложения для символов фиксации. Например, в JavaScript точка с запятой (`;`) может быть символом фиксации, который принимает предложение и печатает этот символ.
-    "editor.acceptSuggestionOnCommitCharacter": true,
-
-
-    // Управляет задержкой в ​​мс, после которой будут отображаться быстрые предложения.
-    "editor.quickSuggestionsDelay": 10,
-
-    // Управляет тем, будет ли нажатие клавиши Tab вставлять лучшее предложение или будет ли Tab циклически перебирать другие предложения
-    "editor.tabCompletion": "off",
-
-    // Включить подсказки параметров
-    "editor.parameterHints.enabled": true,
-
 }
